@@ -1,0 +1,129 @@
+
+.main{
+    display: flex;
+    /* align-items: stretch; */
+    justify-content: space-between;
+    padding-top: 60px;
+
+
+}
+.main-left-col{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 100px;
+    flex-basis: 50%;
+    
+}
+.main-left-col h1{
+    color: white;
+    font-size: 2.8em;
+    margin-bottom: 30px;
+}
+.main-left-col p{
+    margin-bottom: 30px;
+}
+.main-left-col button{
+    background: darkblue;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.main-left-col button:hover{
+    background: #D24776;
+
+
+}
+.main-right-col{
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    position: relative;
+    flex-basis: 50%;
+}
+.main-right-col .mobile{
+    
+    /* transform: scale(0.8); */
+    width: 100%;
+    display: block;
+}
+.m-blue{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    animation-name: move2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 0.05s;
+    width: 25%;
+}
+.m-pink{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    animation-name: move2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    width: 25%;
+   
+}
+
+.ring{
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    width: 25%;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0) rotate(0) scale(1) translateX(0);
+    }
+    50%{
+        transform: translateY(-10px) rotate(20deg) scale(1.1) translateX(10px);
+    }
+    100%{
+        transform: translateY(0)  rotate(0deg) scale(1) translateX(0);
+    }
+    
+}
+@keyframes move2{
+    0%{
+        transform: translateY(0) rotate(0) scale(1) translateX(0);
+    }
+    50%{
+        transform: translateY(10px) rotate(-20deg) scale(1.1) translateX(-10px);
+    }
+    100%{
+        transform: translateY(0)  rotate(0deg) scale(1) translateX(0);
+    }
+    
+}
+
+
+@media screen and (max-width:950px) {
+    
+.main{
+    flex-direction: column;
+
+
+
+}
+.main-left-col{
+    font-size: 0.9em;
+}
+}
+
+

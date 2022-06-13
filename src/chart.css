@@ -1,0 +1,120 @@
+.chart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.chart-left-col{
+    display: grid;
+    grid-template-areas:
+    'cell1 cell2'
+    'cell3 cell3';
+    grid-gap: 20px;
+    margin-right: 40px;
+    
+    
+    
+    /* grid-gap: 20px; */
+    
+}
+.balance{
+    grid-area: cell1;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.balance h2{
+    color: darkblue;
+}
+.transaction{
+    grid-area: cell2;
+    text-align: center;
+    border-radius: 15px;
+    background: white;
+    width: 120px;
+    margin: 0 auto;
+}
+.transaction h2{
+    color: darkblue;
+}
+.transaction p{
+    font-size: 0.8em;
+    padding-top: 20px;
+}
+.chart-left-col img{
+    grid-area: cell3;
+    transform: scale(0.8);
+}
+.chart-right-col{
+    align-self: start;
+    margin-top: 70px;
+}
+.chart-right-col h1{
+    color: indigo;
+    font-size: 1.8em;
+    word-spacing: 15px;
+    margin-top: 10px;
+}
+.chart-right-col p{
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+.chart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150px;
+    color: white;
+    background: indigo;
+    padding: 10px 15px;
+    border-radius: 10px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.chart-btn button{
+    border: none;
+    background: none;
+    margin-right: 5px;
+    color: white;
+    font-size: 0.8em;
+
+}
+.blob-b{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+.blob-t{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.chart-btn:hover .blob-t{
+    left: 0;
+}
+.chart-btn:hover .blob-b{
+    left: 50%;
+    
+}
+
+@media screen and (max-width:950px) {
+    .chart{
+        flex-direction: column-reverse;
+        
+
+    }
+    .chart-left-col{
+        margin-top: 50px;
+
+        
+    }
+    }
+    

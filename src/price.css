@@ -1,0 +1,84 @@
+.price{
+    display: grid;
+    grid-template-areas: 'first first'
+                'second third';
+    grid-gap: 20px;
+    width: 100%;
+    min-height: 500px;
+    padding: 40px 0;
+}
+
+.price-header{
+    text-align: center;
+    grid-area: first;
+    height: 100px;
+    align-self: center;
+
+}
+.price-header h1{
+    color: turquoise;
+    font-size: 2.5em;
+}
+.price-header span{
+    color: tomato;
+}
+.price-header small{
+    opacity: 0.8;
+    font-size: 0.8em;
+}
+
+.free1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: second;
+    min-height: 400px;
+    background: white;
+    border-radius: 50px;
+}
+.free2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: third;
+    min-height: 400px;
+    background: white;
+    border-radius: 50px;
+}
+
+.free1 span, .free2 span{
+    color: tomato;
+    font-size: 0.8em;
+}
+.free1 p, .free2 p{
+    
+    font-size: 0.8em;
+    opacity: .8;
+}
+.free1 h1, .free2 h1{
+    font-size: 1.5em;
+    
+
+}
+.free1 img, .free2 img{
+    width: 40%;
+    
+
+}
+.free1 button, .free2 button{
+    background: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    
+
+}
+.free1 button:hover, .free2 button:hover{
+    background: tomato;
+    color: white;
+   
+    
+
+}
+

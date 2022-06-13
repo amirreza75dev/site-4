@@ -1,0 +1,97 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0.5;
+}
+
+.navbar img{
+    transform: scale(0.8);
+}
+.navbar button{
+    background: tomato;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.navbar button:hover{
+    background: white;
+    color: black;
+}
+.nav-links{
+    color: white;
+    cursor: pointer;
+}
+.nav-links p{
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+.nav-links p:hover{
+    background-color: white;
+    color: black;
+    
+}
+.toggle-menu{
+    display: none;
+}
+.toggle{
+    display: none;
+}
+
+@media screen and (max-width:750px) {
+    .nav-links{
+        display: none;
+    }
+    .toggle{
+        transform: scale(1.5);
+        display: flex;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+    }
+    .cross{
+        text-align: right;
+        padding: 20px;
+        
+        
+    }
+    .toggle-menu{
+        display: block;
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background: tomato;
+        right: 0;
+        z-index: 10;
+        top: -105%;
+    }
+    .show-toggle{
+        top: 0;
+    }
+    .toggle-links{
+        text-align: center;
+    }
+    .toggle-links p{
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    .toggle-links p:hover{
+        background: white;
+    }
+}
+
